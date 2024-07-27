@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 150px;
+    background-color: #151515;
+}
+
+#bg {
+    background-image: url(https://source.unsplash.com/featured/?men,fashion,sneakers);
+    background-repeat: no-repeat;
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#banner_content {
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    position: absolute;
+    margin-top: 100px;
+    background-color: #050c1e;
+    min-height: 150px;
+    padding-top: 40px;
+    width: 100%;
+    bottom: 0;
+    top: 100%;
+
+}
+
+.container a {
+    color: black;
+}
+
+.container a:hover {
+    color: grey;
+}
+
+#size {
+    max-height: 200px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    position: relative;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.main-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-logo{
+    position: absolute;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    top: -140px;
+    color: rgba(255, 255, 255, .7);
+    animation: top-logo 1s ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes top-logo {
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.top .top-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top .top-txt {
+    position: relative;
+    top: 0;
+    color: #fff;
+    font-size: 125px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    text-shadow: 0 5px 25px rgba(132, 131, 131, 0.5);
+    transform: scale(1) translateY(0px);
+    opacity: 0;
+    animation: top-an 1s ease-in;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.top .pro-img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(-10px -3px 10px black);
+    transform: scale(1) translateY(0px) translateX(300px);
+    opacity: 0;
+    animation: t-img-1 1s ease-in;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+.top .pro-img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 275px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(-10px -4px 10px black);
+    transform: scale(1) translateY(0px) translateX(125px);
+    opacity: 0;
+    animation: t-img-2 1s ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.top .pro-img3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 175px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(10px -5px 10px black);
+    transform: scale(1) translateY(0px) translateX(-300px);
+    opacity: 0;
+    animation: t-img-3 1s ease-in;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.top .pro-img4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 325px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(10px -5px 10px black);
+    transform: scale(1) translateY(0px) translateX(-225px);
+    opacity: 0;
+    animation: t-img-4 1s ease-in;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+.top .pro-img5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 275px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(10px -5px 10px black);
+    transform: scale(1) translateY(0px) translateX(-125px);
+    opacity: 0;
+    animation: t-img-5 1s ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.top .pro-img6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 325px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(0 -7px 10px black);
+    transform: scale(1) translateY(100px);
+    opacity: 0;
+    animation: t-img-6 1s ease-in;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.top .pro-img7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(-10px -5px 10px black);
+    transform: scale(1) translateY(0px) translateX(375px);
+    opacity: 0;
+    animation: t-img-7 1s ease-in;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes top-an {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-115px);
+        opacity: 1;
+    }
+}
+
+@keyframes t-img-1 {
+    0% {
+        transform: translateY(100px) translateX(340px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-25px) translateX(300px);
+        opacity: 1;
+    }
+}
+
+@keyframes t-img-2 {
+    0% {
+        transform: translateY(100px) translateX(135px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px) translateX(125px);
+        opacity: 1;
+    }
+}
+
+@keyframes t-img-3 {
+    0% {
+        transform: translateY(100px) translateX(-340px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-40px) translateX(-300px);
+        opacity: 1;
+    }
+}
+
+@keyframes t-img-4 {
+    0% {
+        transform: translateY(100px) translateX(-255px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-25px) translateX(-225px);
+        opacity: 1;
+    }
+}
+
+@keyframes t-img-5 {
+    0% {
+        transform: translateY(100px) translateX(-135px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px) translateX(-125px);
+        opacity: 1;
+    }
+}
+
+@keyframes t-img-6 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(5px);
+        opacity: 1;
+    }
+}
+
+@keyframes t-img-7 {
+    0% {
+        transform: translateY(100px) translateX(415px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-40px) translateX(375px);
+        opacity: 1;
+    }
+}
+
+.pcontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+/*Styles for product card*/
+
+.product .product-card {
+    z-index: 1;
+    background: #1D212B;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 40px;
+    border-radius: 10px;
+    /* cursor: pointer; */
+    filter: drop-shadow(10px 10px 8px black);
+    scale: 0.8;
+    opacity: 0;
+    animation: crd-an linear forwards;
+    animation-timeline: view();
+    animation-range: entry 50px;
+}
+
+@keyframes crd-an {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.product .product-card:before {
+    content: '';
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product .product-card .product-img {
+    z-index: 1;
+    position: absolute;
+    max-width: 350px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(10px 10px 10px black);
+
+}
+
+.product .product-card .name {
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.product .product-card .popup-btn {
+    z-index: 2;
+    color: #fff;
+    background: #555;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.product .popup-view {
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product .popup-view.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product .popup-card {
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.product .popup-card .product-img {
+    z-index: 2;
+    background: #1D212B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product .popup-card .product-img img {
+    z-index: 2;
+    position: relative;
+    width: 450px;
+    left: -50px;
+    filter: drop-shadow(12px 12px 8px black);
+}
+
+.product .popup-card .info {
+    z-index: 2;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.product .popup-card .close-btn {
+    color: #555;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.product .popup-card .info h2 {
+    font-size: 40px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.product .popup-card .info h2 span {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.product .popup-card .info p {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.product .popup-card .info .add-cart-btn {
+    color: #fff;
+    background: #009DD2;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px auto;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.card {
+    background: #1D212B;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px;
+    color: #fff;
+    filter: drop-shadow(10px 10px 8px black);
+    scale: 0.8;
+    opacity: 0;
+    animation: p-crd-an linear forwards;
+    animation-timeline: view();
+    animation-range: entry 50px;
+    height: 100%;
+}
+
+@keyframes p-crd-an {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.p-nav {
+    transform: translateY(-100px);
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.p-top {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transform: translateY(60px);
+    box-shadow: 10px 5px 10px black;
+    margin-bottom: 90px;
+}
+.a-main{
+    background: #1D212B;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    filter: drop-shadow(10px 10px 8px black);
+}
